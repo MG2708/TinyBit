@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}
+{{ object.shortcode }} | {{ block.super }} 
+{% endblock title %}
+
+{% block styles %}
+<style>
+	body {
+		background-color: #004a74;
+		background-image: url("https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+		background-size: cover;
+	}
+
+	.btn-link{
+		color: #20aeff;
+		text-shadow: none;
+	}
+	.btn-link:hover{
+		color: #20aeff;
+	}
+	
+</style>
+{% endblock styles %}
+
+{% block content %}
+<div class=''>
+	<a href="https://lh3.googleusercontent.com/4O2dwU4wZoVxHIynlppq7veRL4zMOknda1KYX8F6xX81trdH3F4BnjJQGembWnATNgdlIBOC30HCnhnXgZiBQBOzA3PFhJrWBkmdF16Zj-mZW_aw1SicudoxrH7DxRfWH8EXGA3CTQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/4O2dwU4wZoVxHIynlppq7veRL4zMOknda1KYX8F6xX81trdH3F4BnjJQGembWnATNgdlIBOC30HCnhnXgZiBQBOzA3PFhJrWBkmdF16Zj-mZW_aw1SicudoxrH7DxRfWH8EXGA3CTQ=w196-h131-p-k" /> </a>
+	<h2>TinyBit.in URL Shortener</h2>
+    <p>  </p> 
+	<h3> Already Exists! </h3>
+	<h6> {{object.url}} </h6>
+	{% if object.clickevent.count %} 
+        <p>Count: {{ object.clickevent.count }}</p> 
+    {% endif %}
+	<h1 class="display-1"><a class="btn btn-link" href="{{object.get_short_url}}">{{object.get_short_url}}</a></h1>
+	<a class="btn btn-outline-light" href="/"> + New</a>
+
+</div>
+
+{% endblock content %}
