@@ -1,0 +1,50 @@
+<! DOCTYPE HTML>
+<html lang="en" class="h-100">
+<head>
+	<link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/tumkFUm_Jgw8JnusHVt2G9qrW6vC1kFO8bCU01F3ZzhfPU-n0GrLb-IJnjaubP8fn7gnm1ojbetKE-weYsx-y7hZCjtfGzcH6DW4Jf0atxTtNJzOB8FqwKUmjuNiiwuZLsuj8NmSBA=w2400?source=screenshot.guru"> 
+	<title> TinyBit.in | Shorten that URL </title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link href="https://getbootstrap.com/docs/4.5/examples/cover/cover.css" rel="stylesheet">
+	{% block styles %}
+	<style>
+	body {
+		background-color: #FFFFFF;
+		background-image: url("https://lh3.googleusercontent.com/kAhiwLgoHtb3G1XqMVNxL19dnKiFdhM_k5i6Id7MJQ6CZtmPEUEru6Mm8tMpbM6mgn_b5N40vlai5jsKidnrooFFSIbBXrzxAIp234Cs5hCgUhLSJmJdLIUeyQ1aydz3MVyW_R_WnQ=w2400");
+		background-size: cover;
+	}
+
+	.btn-link{
+		color: #20aeff;
+		text-shadow: none;
+	}
+	.btn-link:hover{
+		color: #20aeff;
+	}
+	
+	</style>
+	{% endblock styles %}
+</head>
+
+<body class="h-100">
+	<div class="container h-100">
+    	<div class="row h-100 justify-content-center align-items-center">
+       		<div class="col-10 col-md-8 col-lg-6">
+       			
+    			{% block content %}
+
+				{% endblock content %}
+				
+					<div style="position: relative">
+							
+							<p class="font-italic"; style="position: fixed; bottom: 0; width:100%; text-align: center">Copyright ©2020 Mudit Garg </p>
+						
+					</div>
+
+				
+					
+      		</div>
+      	</div>
+  	</div> 			 	
+			
+</body>
+</html>

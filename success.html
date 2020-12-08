@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block styles %}
+<style>
+	body {
+		background-color: #004a74;
+		background-image: url("https://lh3.googleusercontent.com/kAhiwLgoHtb3G1XqMVNxL19dnKiFdhM_k5i6Id7MJQ6CZtmPEUEru6Mm8tMpbM6mgn_b5N40vlai5jsKidnrooFFSIbBXrzxAIp234Cs5hCgUhLSJmJdLIUeyQ1aydz3MVyW_R_WnQ=w2400");
+		background-size: cover;
+	}
+
+	.btn-link{
+		color: #20aeff;
+		text-shadow: none;
+	}
+	.btn-link:hover{
+		color: #20aeff;
+	}
+	
+</style>
+{% endblock styles %}
+
+{% block content %}
+<div class=''>
+	<a href="https://lh3.googleusercontent.com/4O2dwU4wZoVxHIynlppq7veRL4zMOknda1KYX8F6xX81trdH3F4BnjJQGembWnATNgdlIBOC30HCnhnXgZiBQBOzA3PFhJrWBkmdF16Zj-mZW_aw1SicudoxrH7DxRfWH8EXGA3CTQ=w2400?source=screenshot.guru"> <img src="https://lh3.googleusercontent.com/4O2dwU4wZoVxHIynlppq7veRL4zMOknda1KYX8F6xX81trdH3F4BnjJQGembWnATNgdlIBOC30HCnhnXgZiBQBOzA3PFhJrWBkmdF16Zj-mZW_aw1SicudoxrH7DxRfWH8EXGA3CTQ=w196-h131-p-k" /> </a>
+	<h2>TinyBit.in URL Shortener</h2>
+    <p>  </p> 
+	<h3> Success! </h3>
+	<h6> {{object.url}} </h6>
+	<h1 class="display-1"><a class="btn btn-link" href="{{object.get_short_url}}">{{object.get_short_url}}</a></h1>
+	<a class="btn btn-outline-light" href="/"> + New</a>
+
+</div>
+
+{% endblock content %}
