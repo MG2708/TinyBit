@@ -11,7 +11,7 @@ from .models import KirrURL
 class HomeView(View):
 	def get(self, request, *args, **kwargs):
 		the_form = SubmitUrlForm()
-		bg_image = "https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+		bg_image = "https://lh3.googleusercontent.com/kAhiwLgoHtb3G1XqMVNxL19dnKiFdhM_k5i6Id7MJQ6CZtmPEUEru6Mm8tMpbM6mgn_b5N40vlai5jsKidnrooFFSIbBXrzxAIp234Cs5hCgUhLSJmJdLIUeyQ1aydz3MVyW_R_WnQ=w2400"
 		context = {
 			'title':"TinyBit.in URL Shortener",
 			"form": the_form,
